@@ -5,17 +5,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Alfabeto extends Pictograma {
-	private static List<String> letras = new ArrayList<>(); 
+	private static String[] letras; 
 	private String interpretacion;
 	
-	public Alfabeto(String origen, List<String> letras, String interpretacion) {
+	public Alfabeto(String origen, String[] letras, String interpretacion) {
 		super(origen);
 		Alfabeto.letras = letras;
 		this.interpretacion = interpretacion;
 	}
 	
 	public int cantidadLetras() {
-		int resultado = Alfabeto.letras.size();
+		int resultado = Alfabeto.letras.length;
 		return resultado;
 	}
 	
@@ -30,7 +30,7 @@ public class Alfabeto extends Pictograma {
 			resultado.append(letra).append(", ");
 		}
 		
-		if (!letras.isEmpty()) {
+		if (letras.length > 0) {
 			resultado.delete(resultado.length() - 2, resultado.length());
 		}
 		
