@@ -31,7 +31,7 @@ public class Tesis extends Escrito {
 	@Override
 	public String toString() {
 		StringBuilder resultado = new StringBuilder();
-		resultado.append(this.getOrigen()).append("\n").append(this.getTitulo()).append("\n").append(this.getAutor()).append("\n").append(String.valueOf(this.getPaginas())).append("\n").append(this.idea).append("\n").append(String.valueOf(this.argumentos.length)).append("\n").append(this.conclusion).append("\n").append(this.referencias).append("\n").append(this.interpretacion);
+		resultado.append(this.getOrigen()).append("\n").append(this.getTitulo()).append("\n").append(this.getAutor()).append("\n").append(String.valueOf(this.getPaginas())).append("\n").append(this.idea).append("\n").append(String.valueOf(this.argumentos.length)).append("\n").append(this.conclusion).append("\n").append(this.referencias);
 		return resultado.toString();
 	}
 
