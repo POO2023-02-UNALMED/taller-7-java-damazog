@@ -23,7 +23,24 @@ public class Periodico extends Escrito {
 	@Override
 	public String toString() {
 		StringBuilder resultado = new StringBuilder();
-		resultado.append(this.getOrigen()).append("\n").append(this.getTitulo()).append("\n").append(this.getAutor()).append("\n").append(this.getPaginas()).append("\n").append(this.fecha).append("\n").append(this.primicia);
+		resultado.append(this.getOrigen()).append("\n").append(this.getTitulo()).append("\n").append(this.getAutor()).append("\n").append(String.valueOf(this.getPaginas())).append("\n").append(this.fecha).append("\n").append(this.primicia);
 		return resultado.toString();
 	}
+
+	public String getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
+	}
+
+	public String getPrimicia() {
+		return primicia;
+	}
+
+	public void setPrimicia(String primicia) {
+		this.primicia = primicia;
+	}
+	
 }

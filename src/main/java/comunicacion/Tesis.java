@@ -30,7 +30,40 @@ public class Tesis extends Escrito {
 	@Override
 	public String toString() {
 		StringBuilder resultado = new StringBuilder();
-		resultado.append(this.getOrigen()).append("\n").append(this.getTitulo()).append("\n").append(this.getAutor()).append("\n").append(this.getPaginas()).append("\n").append(this.idea).append("\n").append(this.argumentos.size()).append("\n").append(this.conclusion).append("\n").append(this.referencias).append("\n").append(this.interpretacion);
+		resultado.append(this.getOrigen()).append("\n").append(this.getTitulo()).append("\n").append(this.getAutor()).append("\n").append(String.valueOf(this.getPaginas())).append("\n").append(this.idea).append("\n").append(String.valueOf(this.argumentos.size())).append("\n").append(this.conclusion).append("\n").append(this.referencias).append("\n").append(this.interpretacion);
 		return resultado.toString();
 	}
+
+	public String getIdea() {
+		return idea;
+	}
+
+	public void setIdea(String idea) {
+		this.idea = idea;
+	}
+
+	public List<String> getArgumentos() {
+		return argumentos;
+	}
+
+	public void setArgumentos(List<String> argumentos) {
+		this.argumentos = argumentos;
+	}
+
+	public String getConclusion() {
+		return conclusion;
+	}
+
+	public void setConclusion(String conclusion) {
+		this.conclusion = conclusion;
+	}
+
+	public String getReferencias() {
+		return referencias;
+	}
+
+	public void setReferencias(String referencias) {
+		this.referencias = referencias;
+	}
+	
 }

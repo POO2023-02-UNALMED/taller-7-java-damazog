@@ -21,7 +21,16 @@ public class Fabula extends Escrito {
 	@Override
 	public String toString() {
 		StringBuilder resultado = new StringBuilder();
-		resultado.append(this.getOrigen()).append("\n").append(this.getTitulo()).append("\n").append(this.getAutor()).append("\n").append(this.getPaginas()).append("\n").append(this.ensenanza);
+		resultado.append(this.getOrigen()).append("\n").append(this.getTitulo()).append("\n").append(this.getAutor()).append("\n").append(String.valueOf(this.getPaginas())).append("\n").append(this.ensenanza);
 		return resultado.toString();
 	}
+
+	public String getEnsenanza() {
+		return ensenanza;
+	}
+
+	public void setEnsenanza(String ensenanza) {
+		this.ensenanza = ensenanza;
+	}
+	
 }

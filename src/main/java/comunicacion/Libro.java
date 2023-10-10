@@ -25,7 +25,7 @@ public class Libro extends Escrito {
 	@Override
 	public String toString() {
 		StringBuilder resultado = new StringBuilder();
-		resultado.append(this.getOrigen()).append("\n").append(this.getTitulo()).append("\n").append(this.getAutor()).append("\n").append(this.getPaginas()).append("\n").append(this.co_autor).append("\n").append(this.editorial).append("\n").append(this.edicion);
+		resultado.append(this.getOrigen()).append("\n").append(this.getTitulo()).append("\n").append(this.getAutor()).append("\n").append(String.valueOf(this.getPaginas())).append("\n").append(this.co_autor).append("\n").append(this.editorial).append("\n").append(this.edicion);
 		return resultado.toString();
 	}
 
