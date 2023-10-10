@@ -16,6 +16,7 @@ public class Alfabeto extends Pictograma {
 	
 	public int cantidadLetras() {
 		int resultado = Alfabeto.letras.size();
+		return resultado;
 	}
 	
 	public String interpretacion() {
